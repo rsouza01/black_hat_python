@@ -21,5 +21,9 @@ def ssh_command(ip, user, passwd, command):
         ssh_session.exec_command(command)
         print ssh_session.recv(1024)
         return
-    
-    ssh_command('192.168.100.131', 'justin', 'lovesthepython','id')
+
+def main():
+    ssh_command('127.0.0.1', 'justin', 'lovesthepython','id')
+
+if __name__== "__main__":
+  main()
